@@ -1,0 +1,196 @@
+body{
+    background-image: url("../images/kbc4.jpg");
+    background-repeat: no-repeat;
+     /* background-position: center;  */
+    background-size: cover; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container{
+    position: relative;
+    height: 700px;
+}
+#questionDiv .options:hover {
+   
+    background-image: linear-gradient(to right,red,indigo,red);
+ }
+ #questionDiv .options:active {
+   
+    background-image: linear-gradient(to right,green,indigo,green);
+ }
+h1,h3{
+    /* background-color: black; */
+    color:white;
+    /* font-size: 27px; */
+    line-height: 2em;
+    font-weight: bold;
+    border: 2px solid black;
+    position: relative;
+    top: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-image: linear-gradient(to right,blue,indigo,violet,black); 
+
+}
+.gameDiv{
+    /* width: 100%;
+    height: 100%; */
+    padding: 20px;
+    
+    position: relative;
+}
+#playBtn,#instBtn,#backBtn,#quitBtn,#nextBtn{
+  
+    color:white;
+    font-weight: bold;
+    background-image: linear-gradient(to right,blue,indigo,violet,black); 
+	width: 10em;
+	/* height: 2.5em; */
+	border:2px solid black;
+	font-size: 27px;
+	line-height: 2em;
+	text-align: center;
+    box-shadow:10px 10px 0 rgba(0,0,0,.5);
+    overflow: hidden;  
+	letter-spacing:5px;
+}
+#playBtn{
+    float: left;
+    position: fixed;
+    bottom: 10%;
+    left:10%;
+}
+#instBtn{
+    float: right;
+    position: fixed;
+    bottom: 10%;
+    right:10%;
+}
+#backBtn{
+    float: right;
+    margin-top: 10%;
+    /* position: fixed;
+    bottom: 10%;
+    right:10%; */
+  
+}
+#instBtn::after{
+    clear:both;
+}
+#backBtn::after{
+    clear:both;
+}
+
+
+h1, h3,.radio{
+    text-align: center;
+}
+.instructionsPage,.gamePage{
+    background-image: linear-gradient(to right,blue,indigo,violet,black); 
+}
+.para{
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right,blue,indigo,black); 
+    font-size: 15px;
+    padding: 5%;
+    margin-top: 3%;
+    border:2px solid black;
+    box-shadow:10px 10px 0 rgba(0,0,0,.5);
+}
+#quiz{
+    color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right,blue,indigo,black); 
+    font-size: 20px;
+    margin-top: 3%;
+    border:2px solid black;
+    box-shadow:10px 10px 0 rgba(0,0,0,.5);
+}
+
+#option0,#option1,#option2,#option3 {
+    width: 400px;
+    padding: 5px;
+
+    height: 50px;
+    position: relative;
+    background-image: linear-gradient(to right,black,indigo,blue,indigo,black); 
+    border:2px solid black;
+    box-shadow:10px 10px 0 rgba(0,0,0,.5);
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+ 
+  }
+#option0{
+    float: left;
+    margin: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+#option1{
+    float: left;
+    margin: 1%;
+    margin-bottom: 1%;
+}
+#option2{
+    float: left;
+    margin: 1%;
+    margin-top: 1%;
+}
+#option3{
+    float: left;
+    margin: 1%;
+    margin-top: 1%;
+    margin-right: 5%;
+}
+  #option0:after,#option1:after, #option2:after, #option3:after{
+    content: "";
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 25px solid black;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+   clear: both;
+   display: block;
+   content: "";
+  }
+ 
+  #option0:before,#option1:before, #option2:before, #option3:before {
+    content: "";
+    position: absolute;
+   right: -25px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid black;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+   
+  }
+  #nextBtn::before{
+      clear: both;
+      display: block;
+      content: "";
+      
+  }
+  #nextBtn{
+      float: left;
+      margin-top: 2%;
+  }
+
+  #quitBtn{
+    float: right;
+    margin-top: 2%;
+ }
+
+#quitBtn::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
