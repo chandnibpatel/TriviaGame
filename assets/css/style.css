@@ -10,6 +10,10 @@ body{
 .container{
     position: relative;
     height: 700px;
+    opacity: 0.9;
+}
+.gamePage{
+    height: 900px;;
 }
 #questionDiv .options:hover {
    
@@ -40,7 +44,12 @@ h1,h3{
     
     position: relative;
 }
-#playBtn,#instBtn,#backBtn,#quitBtn,#nextBtn{
+.optionsgrpclass{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#playBtn,#instBtn,#backBtn,#quitBtn,#nextBtn,#playAgainBtn{
   
     color:white;
     font-weight: bold;
@@ -69,7 +78,7 @@ h1,h3{
 }
 #backBtn{
     float: right;
-    margin-top: 10%;
+    margin-top: 2%;
     /* position: fixed;
     bottom: 10%;
     right:10%; */
@@ -185,7 +194,9 @@ h1, h3,.radio{
 
   #quitBtn{
     float: right;
-    margin-top: 2%;
+    position: fixed;
+    top: 70%;
+    left: 65%;
  }
 
 #quitBtn::after{
@@ -193,4 +204,29 @@ h1, h3,.radio{
     display: block;
     content: "";
 }
+#resultDiv{
+    padding-top: 3%;
 
+}
+#resultImg{
+    width:300px;
+    height:260px;
+}
+#resultlbl{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+#resultSummaryDiv{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top:30%;
+}
+#playAgainBtn{
+    float: right;
+    position: fixed;
+    top: 70%;
+    left: 48%;
+}
