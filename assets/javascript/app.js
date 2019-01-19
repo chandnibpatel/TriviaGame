@@ -84,12 +84,12 @@ var moneyEarned =0;
 
 // audio files
 var audioKBC = new Audio("./assets/sounds/KBC_Theme.wav");
-var audioKBCwrong = new Audio("./assets/sounds/Wrong2.mp3");
+var audioKBCwrong = new Audio("./assets/sounds/Wrong.mp3");
 var audioKBCtimeOut = new Audio("./assets/sounds/timeout.mp3");
 
 //Function to start the Timer
 function startTimer(){
-     remTime = 10;
+     remTime = 30;
        //start timer
     $("#timeRem").text(" " + remTime + " Sec")
       if(remTime > 0){
