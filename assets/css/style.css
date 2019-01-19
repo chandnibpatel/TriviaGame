@@ -111,7 +111,7 @@ h1, h3,.radio{
 }
 
 #option0,#option1,#option2,#option3 {
-    width: 380px; 
+    width: 40%; 
     padding: 5px;
     height: 50px;
     position: relative;
@@ -183,7 +183,7 @@ h1, h3,.radio{
   }
 
   #quitBtn{
-    float: right;
+    float: right; 
     position: absolute;
     top: 63%;
     left: 65%;
@@ -220,3 +220,14 @@ h1, h3,.radio{
     right:50%;
     top:63%;
 }
+@media screen and (max-width:768px){
+    #option0,#option1,#option2,#option3{
+        width: 40%;
+    }
+}
+@media screen and (max-width:640px) {
+    #option0,#option1,#option2,#option3{
+        width: 100%;
+    }
+}
+
