@@ -11,17 +11,23 @@
 <body>
     <div class="container gamePage">
        
-        <div id="questionDiv">
-                <h3> Time Remaining:<label id="timeRem"> </label></h3> 
-            <div class="gameDiv" id="quiz">
+        <div id="questionDiv" class="row">
+            <div class="col-12">
+               <h3> Time Left:<label id="timeRem"> </label></h3>
+            </div>
+                             
+            <div class="gameDiv col-12" id="quiz">
                 <label id="questionText" class="question">
             </div>  
+
             <div id="optionGrp" class="optionsgrpclass">
-                <div id="option0" class="options"></div>
-                <div id="option1" class="options"></div>
-                <div id="option2" class="options"></div>
-                <div id="option3" class="options"></div>
-             </div>
+            
+                <div id="option0" class="options col-6 col-sm-12"></div>
+                <div id="option1" class="options col-6 col-sm-12"></div>
+           
+                <div id="option2" class="options col-6 col-sm-12"></div>
+                <div id="option3" class="options col-6 col-sm-12"></div>
+            </div>
         </div>
     <div id="resultDiv" >
         <h2 id="resultlbl"></h2>
@@ -29,14 +35,14 @@
     </div>
 
     <div id="resultSummaryDiv">
-        <label id="gameResults"></label><br>
-        <label id="correctAnsCnt"></label><br>
-        <label id="incorrectAnsCnt"></label><br>
-        <label id="unansweredCnt"></label><br><br>
+        <label class="col-12" id="gameResults"></label><br>
+        <label class="col-12" id="correctAnsCnt"></label><br>
+        <label class="col-12" id="incorrectAnsCnt"></label><br>
+        <label class="col-12" id="unansweredCnt"></label><br><br>
         <button class="btn" id="playAgainBtn">Play Again</button>
     </div>
 
-        <div class="quitGame" id="quizSec">
+        <div class="quitGame col-12" id="quizSec">
                 <a class="btn" href="index.html" role="button" id="quitBtn">Quit</a> 
         </div>
 

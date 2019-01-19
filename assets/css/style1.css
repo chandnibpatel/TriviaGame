@@ -62,19 +62,21 @@ h1,h3{
 }
 #playBtn{
     float: left;
-    /* position: fixed;
-    bottom: 10%;
-    left:10%; */
+ 
+    /*position: relative; */
+    /* margin-top: 40%; */
+    /* left:10%; */
 }
 #instBtn{
     float: right;
-    /* position: fixed;
-    bottom: 10%;
-    right:10%; */
-}
+
+    /*position: relative; */
+    /* margin-top: %; */
+    /* right:10%; */
+} 
 #backBtn{
     float: right;
-    /* margin-top: 2%;   */
+    margin-top: 2%;  
 }
 #instBtn::after{
     clear:both;
@@ -111,8 +113,9 @@ h1, h3,.radio{
 }
 
 #option0,#option1,#option2,#option3 {
-    width: 380px; 
+    width: 400px;
     padding: 5px;
+
     height: 50px;
     position: relative;
     background-image: linear-gradient(to right,black,indigo,blue,indigo,black); 

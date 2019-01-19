@@ -71,7 +71,7 @@ var q11 ={
 var queArr = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11];
 
 //variable declarations
-var noOfQueToDisp = 10;
+var noOfQueToDisp = 2;
 var loadedQue = [];
 var remTime = 10;
 var intervalId;
@@ -232,7 +232,7 @@ $(document).ready(function() {
 });
 
 //User click on options to choose an answer
-$("#questionDiv").on("click",".options", function(){
+$("#optionGrp").on("click",".options", function(){
     var selectedText=$(this).text();
     buttonClick(selectedText);
 });
