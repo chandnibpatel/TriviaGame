@@ -168,18 +168,18 @@ function displayResult(resultText){
     if (resultText==="Correct"){
         imgUrl="./assets/images/correct.gif";
         
-        $("#resultlbl").text('You are correct!!..You have earned $' + moneyEarned);
+        $("#resultlbl").text('You are correct!!..You have earned $' + Number(moneyEarned).toLocaleString('en'));
         audioKBC.play();}
     else if(resultText==="Incorrect")
        { 
         imgUrl="./assets/images/wrong.gif";
-        $("#resultlbl").text("Sorry ! Correct answer is " + rightAnswer + " Your earned balance is $"+ moneyEarned );
+        $("#resultlbl").text("Sorry ! Correct answer is " + rightAnswer + ". Your earned balance is $"+ Number(moneyEarned).toLocaleString('en') );
         audioKBCwrong.play();
     }
     else {
         imgUrl="./assets/images/timeout.gif";
         audioKBCtimeOut.play();
-        $("#resultlbl").text("Timeout  ! Correct answer is " + rightAnswer + " Your earned balance is $"+ moneyEarned  );
+        $("#resultlbl").text("Timeout  ! Correct answer is " + rightAnswer + ". Your earned balance is $"+ Number(moneyEarned).toLocaleString('en')  );
       
     }
     $("#resultImg").attr("src",imgUrl);
@@ -196,9 +196,9 @@ function displayResult(resultText){
 function resultSummary(){
     console.log("moneyEarned:" + moneyEarned);
     if (moneyEarned === 10000000){
-        $("#gameResults").text("Congratulations! You have become a 'Crorepati', Earned: $" + moneyEarned );
+        $("#gameResults").text("Congratulations! You have become a 'Crorepati', Earned: $" + Number(moneyEarned).toLocaleString('en') );
     }else{
-        $("#gameResults").text("All Done! Your Earned: $" + moneyEarned );
+        $("#gameResults").text("All Done! Your Earned: $" + Number(moneyEarned).toLocaleString('en') );
     }
  
     $("#correctAnsCnt").text("Correct Answers: "+ correctAnsCount);
