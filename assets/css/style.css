@@ -224,10 +224,37 @@ h1, h3,.radio{
     #option0,#option1,#option2,#option3{
         width: 40%;
     }
+    #quitBtn{ 
+        top: 63%;
+        left: 50%;
+    }
+
 }
 @media screen and (max-width:640px) {
     #option0,#option1,#option2,#option3{
         width: 100%;
     }
+    #quitBtn{ 
+    top: 63%;
+    left: 50%;
+    }
+   
 }
 
+@media screen and (max-width:425px) {
+    #option0,#option1,#option2,#option3{
+        width: 100%;
+    }
+    #quitBtn{ 
+       
+    top: 73%;
+    left: 9%;
+}
+#playAgainBtn{ 
+   
+right: 9%;
+}
+#resultImg{
+    height:200px;
+}
+}
