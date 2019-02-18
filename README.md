@@ -2,6 +2,8 @@
 This is a classic quiz game.
 
 # Instructions
+https://chandnibpatel.github.io/TriviaGame/instructions.html
+
 10 Questions Presented to you one by one.
 
 Answer your way to win $ 1 Crore, and become a 'Crorepati'
